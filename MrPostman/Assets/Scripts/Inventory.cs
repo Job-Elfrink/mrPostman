@@ -29,32 +29,6 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void RemoveItem(Dier.Voedseltype voedseltype)
-    {
-        for (int i = 0; i < slots.Count; i++)
-        {
-            Dier.Voedseltype v = items[i].voedseltype;
-
-            if (v == voedseltype)
-            {
-                for (int a = i; a < slots.Count; a++)
-                {
-                    if (a + 1 == slots.Count)
-                    {
-                        items[a] = null;
-                        slots[i].sprite = emptyItemSlot;
-
-                    }
-                   // else
-                   // {
-                       // items[a] = items[(a + 1)];
-                   // }
-                }
-                break;
-            }
-        }
-    }
-
     public void Feed(int slot)
     {
         if (dier != null && items[slot] != null)

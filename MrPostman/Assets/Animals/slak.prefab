@@ -95,9 +95,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.08331466}
+  m_Offset: {x: 0, y: -0.008588791}
   serializedVersion: 2
-  m_Radius: 0.5806854
+  m_Radius: 0.5059595
 --- !u!114 &8841188135363204407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,10 +110,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d56bf4e0fa67d048af74dbab516bd28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dier: {fileID: 11400000, guid: 471a019c0e65aa942852b7933ceea5ed, type: 2}
   item: {fileID: 11400000, guid: b2fd6c4819f3e6c4a9475c06b9a10487, type: 2}
   inventory: {fileID: 0}
   anim: {fileID: 972496272}
+  isHungry: 1
 --- !u!95 &972496272
 Animator:
   serializedVersion: 3
