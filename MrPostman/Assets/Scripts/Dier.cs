@@ -13,6 +13,7 @@ public class Dier : MonoBehaviour
     public Animator anim;
 
     public GameObject warning;
+    public GameObject feed;
 
     public GameManager gameManager;
 
@@ -38,11 +39,19 @@ public class Dier : MonoBehaviour
         {
             anim.enabled = false;
             warning.SetActive(false);
+
             Debug.Log("GEEN HONGER MEER");
         }
 
     }
 
+
+    private void StartParticles()
+    {
+        
+        feed = Instantiate(feed, transform);
+        feed.transform.localPosition = new Vector3(0, 0, 0);
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -78,6 +87,7 @@ public class Dier : MonoBehaviour
         {
             isHungry = false;
             gameManager.dierenHonger -= 1;
+            StartParticles();
             return true;
         }
         else

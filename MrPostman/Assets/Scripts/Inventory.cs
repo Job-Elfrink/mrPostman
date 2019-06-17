@@ -31,6 +31,23 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            Feed(0);
+        }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Feed(1);
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            Feed(2);
+        }
+
+    }
+
     public void Feed(int slot)
     {
         foreach(Dier dier in dieren)
