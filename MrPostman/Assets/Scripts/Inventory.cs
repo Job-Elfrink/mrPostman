@@ -9,11 +9,11 @@ public class Inventory : MonoBehaviour
     public List<InventoryItem> items = new List<InventoryItem>();
     public Sprite emptyItemSlot;
 
-    public static Dier dier;
+    public static HashSet<Dier> dieren = new HashSet<Dier>();
 
     public List<Image> slots = new List<Image>();
 
-    public void AddItem(InventoryItem item)
+    public bool AddItem(InventoryItem item)
     {
         for (int i = 0; i < slots.Count; i++)
         {
@@ -24,22 +24,28 @@ public class Inventory : MonoBehaviour
                 slots[i].sprite = item.eten;
 
 
-                break;
+                return true;
             }
         }
+
+        return false;
     }
 
     public void Feed(int slot)
     {
-        if (dier != null && items[slot] != null)
+        foreach(Dier dier in dieren)
         {
-            if (dier.FeedAnimal(slot))
+            if (dier != null && items[slot] != null && dier.item == items[slot] )
             {
-                items[slot] = null;
-                slots[slot].sprite = emptyItemSlot;
-            }
+                if (dier.FeedAnimal(slot))
+                {
+                    items[slot] = null;
+                    slots[slot].sprite = emptyItemSlot;
+                }
 
+            }
         }
+
     }
 
 }

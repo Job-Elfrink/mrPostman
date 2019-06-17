@@ -15,21 +15,17 @@ public class Pickup : MonoBehaviour
         inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
     }
 
-    private void Update()
-    {
-      //  if (dier.isHungry == false)
-        {
-         //   Destroy(this.gameObject);
-        }
-    }
+
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            inventory.AddItem(item);
-            if(inventory.items.Contains(item))
+            if (inventory.AddItem(item))
+            {
             Destroy(this.gameObject);
+            }
+
         }
     }
 

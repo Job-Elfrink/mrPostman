@@ -12,34 +12,43 @@ public class Dier : MonoBehaviour
 
     public Animator anim;
 
+    public GameObject warning;
+
+    public GameManager gameManager;
+
     public bool isHungry = true;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+
+        warning = Instantiate(warning, transform);
+        warning.transform.localPosition = new Vector3(0,0,0);
+
+        gameManager.dierenHonger += 1;
+
     }
 
 
 
     private void Update()
     {
-        
+
         if (isHungry == false)
         {
             anim.enabled = false;
+            warning.SetActive(false);
             Debug.Log("GEEN HONGER MEER");
         }
 
     }
 
 
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            Inventory.dier = this;
-            //FeedAnimal();
+            Inventory.dieren.Add(this);
         }
     }
 
@@ -47,7 +56,7 @@ public class Dier : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Inventory.dier = null;
+            Inventory.dieren.Remove(this);
         }
     }
 
@@ -68,7 +77,7 @@ public class Dier : MonoBehaviour
         if (inventory.items[slot] == item && isHungry == true)
         {
             isHungry = false;
-
+            gameManager.dierenHonger -= 1;
             return true;
         }
         else
