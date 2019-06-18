@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Tutorial : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject volgendeTekst;
+
+    public void Next()
     {
-        
+        volgendeTekst.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
