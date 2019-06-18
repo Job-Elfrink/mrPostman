@@ -1,13 +1,15 @@
 fileFormatVersion: 2
-guid: 823e25676e38fb444b500530f4feb692
+guid: 2a2053c7d3c0b3541a61700cf5962ec2
 TextureImporter:
   fileIDToRecycleName:
-    21300000: flower_1
-    21300002: Flower_2
-    21300004: Grass_2
-    21300006: Grass_3
-    21300008: Grass_4
-    21300010: Grass_5
+    21300000: Buttons_0
+    21300002: Buttons_1
+    21300004: Buttons_2
+    21300006: Buttons_3
+    21300008: Buttons_4
+    21300010: Buttons_5
+    21300012: Buttons_6
+    21300014: Arrow
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -51,7 +53,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,53 +92,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_1
+      name: Buttons_0
       rect:
         serializedVersion: 2
-        x: 149
-        y: 719
-        width: 174
-        height: 246
-      alignment: 9
-      pivot: {x: 0.32741362, y: 0.07274348}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10eef8e3f1f97c343a62fbd0899f4e90
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flower_2
-      rect:
-        serializedVersion: 2
-        x: 654
-        y: 757
-        width: 240
-        height: 186
-      alignment: 9
-      pivot: {x: 0.4765391, y: 0.11655188}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 188f54133bb2caa45ae5fac4d2f1947b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grass_2
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 208
-        width: 120
-        height: 170
+        x: 152
+        y: 794
+        width: 345
+        height: 118
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,19 +106,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32ba21d13b40229448008062086bf174
+      spriteID: ea77dbcccfed0a849a59cc466d5f47ba
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass_3
+      name: Buttons_1
       rect:
         serializedVersion: 2
-        x: 650
-        y: 217
-        width: 172
-        height: 146
+        x: 732
+        y: 796
+        width: 118
+        height: 116
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,19 +126,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44154a7a0e9507a4c974b1876f1bf006
+      spriteID: 43fc6dcaaa8d1b3438d0f02fd6be211a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass_4
+      name: Buttons_2
       rect:
         serializedVersion: 2
-        x: 828
-        y: 217
-        width: 120
-        height: 151
+        x: 152
+        y: 658
+        width: 346
+        height: 122
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be8adadb128a1a743be5870e1df401c6
+      spriteID: 98735986764012d4591a71a75215ccf7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grass_5
+      name: Buttons_3
       rect:
         serializedVersion: 2
-        x: 83
-        y: 204
-        width: 64
-        height: 108
+        x: 732
+        y: 667
+        width: 112
+        height: 113
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +166,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2084adaf0281f745a0a25fbe3935f4e
+      spriteID: ec60bcf23780cc7449bcc9c5a892097e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_4
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 528
+        width: 342
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787659ac54b249543a16bd742a5a6996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_5
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 516
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f72fda5af841b24691489265880c37d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_6
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 354
+        width: 848
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678ce001d8491a643a4390aeb70c6236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 72
+        width: 293
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0dce2d67dfe6cb40b20178138ccdcd7
       vertices: []
       indices: 
       edges: []
@@ -212,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0cd9e3a6e206eca428f0444a6d349f75
+    spriteID: 0ab1f3beb7980dc41bd4e6a55444a8ad
     vertices: []
     indices: 
     edges: []

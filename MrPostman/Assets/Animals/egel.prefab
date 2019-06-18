@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300020, guid: 40a7895998594124585fa2852e8a1315, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -95,9 +95,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.049321055}
+  m_Offset: {x: 0, y: 0.19866145}
   serializedVersion: 2
-  m_Radius: 0.60603654
+  m_Radius: 0.35805404
 --- !u!114 &10005279266508586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,10 +110,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d56bf4e0fa67d048af74dbab516bd28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dier: {fileID: 11400000, guid: f8c2e251fcc71ef4cbd08d484290d9e2, type: 2}
   item: {fileID: 11400000, guid: b91ded247d5a26d48ba3f567691a9768, type: 2}
   inventory: {fileID: 0}
   anim: {fileID: 2071977955}
+  warning: {fileID: 2328465572634297622, guid: 492a32c703f0000418964d772e71a887, type: 3}
+  feed: {fileID: 1350812716, guid: 39fb2ce0705b3a04690760a62f7e2464, type: 3}
+  gameManager: {fileID: 0}
+  isHungry: 1
 --- !u!95 &2071977955
 Animator:
   serializedVersion: 3
