@@ -50,8 +50,10 @@ public class Inventory : MonoBehaviour
 
     public void Feed(int slot)
     {
+        // ga alle dieren in de list af
         foreach(Dier dier in dieren)
         {
+            //als er een dier is, en een item in het slot, en het dier wil het item, wordt het slot weer leeg gemaakt
             if (dier != null && items[slot] != null && dier.item == items[slot] )
             {
                 if (dier.FeedAnimal(slot))

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using UnityEngine.Audio;
 
 public class Dier : MonoBehaviour
 {
@@ -39,12 +40,22 @@ public class Dier : MonoBehaviour
         {
             anim.enabled = false;
             warning.SetActive(false);
-
+     
             Debug.Log("GEEN HONGER MEER");
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            
         }
 
     }
 
+    private void PlaySound()
+    {
+        AudioSource feed = GetComponent<AudioSource>();
+        feed.Play();
+    }
 
     private void StartParticles()
     {
@@ -83,11 +94,13 @@ public class Dier : MonoBehaviour
 
     public bool FeedAnimal(int slot)
     {
+        //Als dier honger heeft en dier wil het eten, eet hij het, en heeft hij geen honger meer.
         if (inventory.items[slot] == item && isHungry == true)
         {
             isHungry = false;
             gameManager.dierenHonger -= 1;
             StartParticles();
+            PlaySound();
             return true;
         }
         else

@@ -9,6 +9,7 @@ public class Pickup : MonoBehaviour
     private Inventory inventory;
 
     public InventoryItem item;
+    public AudioSource pickup;
 
     void Start()
     {
@@ -21,14 +22,20 @@ public class Pickup : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+
             if (inventory.AddItem(item))
             {
-            Destroy(this.gameObject);
+                PlaySound();
+                Destroy(this.gameObject);
             }
 
         }
     }
 
+    private void PlaySound()
+    {
+        pickup.Play();
+    }
 
     // sprite verandert bij het inslepen van een item
     private void OnValidate()
